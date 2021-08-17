@@ -1,0 +1,64 @@
+.base {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  color: goldenrod;
+  width: 100vw;
+  min-height: auto;
+  max-height: 100vh;
+}
+.baseTop {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.baseLine {
+  border-bottom: solid 1px goldenrod;
+}
+.baseSong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.albumContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid goldenrod;
+  justify-content: space-between;
+}
+
+.albumImg {
+  position: relative;
+  width: 45%;
+  height: 150px;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 120px;
+  }
+}
+
+.albumTitle {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  &_title {
+    font-size: 1.5rem;
+  }
+  &_singer {
+    font-size: 1rem;
+  }
+}
